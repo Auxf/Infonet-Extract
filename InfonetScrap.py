@@ -8,11 +8,12 @@ import re
 from unidecode import unidecode
 
 # Directory where you want to save company data
-base_dir = "/Users/auxane/Desktop/Companies"
+base_dir = "/Users/Desktop/YourFile"
 
-# URL of the page to scrape
+# URL of the page to scrape: You need a URL with research and a filter that is already done. The scrapper will only get the results on page 1, you can check the page' number here : https://infonet.fr/recherche-entreprises/1
 url = "https://infonet.fr/recherche-entreprises/1/P2FwZUNvZGVzPSZzZWN0b3JDb2Rlcz0mcG9zdGFsQ29kZXM9JnN0YXR1c2VzPUFjdGl2ZSZsZWdhbEZvcm1zPSZjaXRpZXM9Jm1pblNhbGVzPTI0MTIyMzU4MTc3JmluY2x1ZGVGb3JlaWduZXJzPTAmc29ydEJ5PWxhc3RfZmluYW5jaWFsX2Nsb3Npbmdfc2FsZXMmY3VzdG9tQ29sdW1uTmFtZT1zaXJldCZsaW1pdD0yNQ=="
 
+#Different setups to avoid Captcha
 user_agents = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
     "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0",
